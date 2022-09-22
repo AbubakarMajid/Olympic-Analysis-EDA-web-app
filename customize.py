@@ -1,7 +1,7 @@
 import pandas as pd
 
-df1 = pd.read_csv('E:\\data_analytics_projects\\athlete_events.csv')
-df2 = pd.read_csv('E:\\data_analytics_projects\\noc_regions.csv')
+df1 = pd.read_csv('athlete_events.csv')
+df2 = pd.read_csv('noc_regions.csv')
 
 def preprocess():
     global df1, df2
