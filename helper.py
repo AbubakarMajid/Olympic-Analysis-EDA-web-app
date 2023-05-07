@@ -55,9 +55,9 @@ def nations_over_time(df):
 
 def events_over_time(df):
 
-    events = df.drop_duplicates(['Year','Event'])['Year'].value_counts().reset_index()
-    events.rename(columns = {'index':'Years','Year':'Events'},inplace = True)
-    events.sort_values(by = ['Years'], ascending = True,inplace = True)
+    events = df.drop_duplicates(['Year','Event'])['Year'].value_counts()
+    #events.rename(columns = {'index':'Years','Year':'Events'},inplace = True)
+    events = events.sort_values(ascending = True)
     return events
 
 def sports_events_over_years(df):
