@@ -5,6 +5,7 @@ import plotly.express as px
 import streamlit as st
 import customize
 import helper
+import scipy
 
 df = customize.preprocess()
 st.sidebar.image('https://e7.pngegg.com/pngimages/1020/402/png-clipart-2024-summer-olympics-brand-circle-area-olympic-rings-olympics-logo-text-sport.png')
