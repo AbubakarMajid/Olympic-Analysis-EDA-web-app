@@ -75,7 +75,7 @@ elif user_menu == 'Overall Analysis':
 
     events_per_year = helper.events_over_time(df)
     st.subheader('No. of events happened over the years')
-    fig2 = px.line(events_per_year, x='Years', y='Events', markers=True)
+    fig2 = px.line(events_per_year, x=events_per_year.index, y=events_per_year.values, markers=True)
     st.plotly_chart(fig2)
 
     st.subheader('Sports events over the years')
