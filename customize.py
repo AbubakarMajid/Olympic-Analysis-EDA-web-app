@@ -1,6 +1,6 @@
 import pandas as pd
 
-df1 = pd.read_parquet('athlete_events.csv')
+df1 = pd.read_parquet('athlete_events.parquet')
 df2 = pd.read_csv('noc_regions.csv')
 
 def preprocess():
