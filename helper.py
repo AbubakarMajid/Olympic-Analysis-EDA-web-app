@@ -49,7 +49,7 @@ def select_year_country(df,year, country):
 
 def nations_over_time(df):
     nationsovertime = df.drop_duplicates(['Year','region'])['Year'].value_counts().reset_index()
-    nationsovertime.rename(columns = {'index':'Edition','Year':'Teams'},inplace = True)
+    nationsovertime.rename(columns = {'index':'Edition','Year':'Teams'},axis = 1,inplace = True)
     nationsovertime = nationsovertime.sort_values(by=['Edition'])
     return nationsovertime
 
