@@ -57,7 +57,7 @@ def events_over_time(df):
 
     events = df.drop_duplicates(['Year','Event'])['Year'].value_counts()
     #events.rename(columns = {'index':'Years','Year':'Events'},inplace = True)
-    events = events.sort_values(ascending = True)
+    events = events.sort_index()
     return events
 
 def sports_events_over_years(df):
