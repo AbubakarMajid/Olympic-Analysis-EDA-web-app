@@ -48,10 +48,10 @@ def select_year_country(df,year, country):
     return x
 
 def nations_over_time(df):
-    nations_over_time = df.drop_duplicates(['Year','region'])['Year'].value_counts().reset_index()
-    nations_over_time.rename(columns = {'index':'Edition','Year':'Teams'},inplace = True)
-    nations_over_time = nations_over_time.sort_values(by=['Edition'])
-    return nations_over_time
+    nationsovertime = df.drop_duplicates(['Year','region'])['Year'].value_counts().reset_index()
+    nationsovertime.rename(columns = {'index':'Edition','Year':'Teams'},inplace = True)
+    nationsovertime = nationsovertime.sort_values(by=['Edition'])
+    return nationsovertime
 
 def events_over_time(df):
 
